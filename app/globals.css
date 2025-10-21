@@ -1,53 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 100%;
 }
 
 body {
   height: 100%;
-  margin: 0;
-  background: linear-gradient(180deg, #232029, #231e2d);
-  color: #ddd8e4;
 }
 
 main {
-  text-align: center;
   margin: 5rem auto;
+  display: flex;
 }
 
-main img {
-  width: 8rem;
-  height: 8rem;
-  object-fit: cover;
-  filter: drop-shadow(0 0 4px #f6c363);
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
 }
 
-h1 {
-  font-size: 3rem;
-  margin: 3rem auto;
-  color: #ede9f3;
-  font-family: 'Poppins', sans-serif;
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 40%;
+  margin: 0 auto;
 }
 
-p {
-  font-size: 1.5rem;
-}
-
-p a {
-  color: #f4c33d;
-  text-decoration: none;
-  padding-bottom: 0.05rem;
-  border-bottom: 2px solid #f4c33d;
-}
-
-p a:hover,
-p a:active {
-  color: #bd3df4;
-  border-color: #bd3df4;
+.card-cover {
+  position: absolute;
+  inset: 0;
+  background-color: grey;
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
 }
