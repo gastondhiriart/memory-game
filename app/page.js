@@ -1,5 +1,6 @@
-import Cards from "./components/cards/cards";
 import _ from "lodash";
+
+import Cards from "./components/cards/cards";
 
 const images = [
   "https://images.unsplash.com/photo-1626808642875-0aa545482dfb",
